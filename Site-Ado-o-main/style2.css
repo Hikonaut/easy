@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: sans-serif;
+}
+body{
+    background-image: url(Imagens/fundogato1.jpeg);
+    background-size: auto;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 5%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+header{
+    background-size: cover;
+    background-attachment: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.logo{
+    width: 150px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+}
+nav ul a{
+    color: white;
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+}
+nav ul a:not(.btn):after{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.637);
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+nav ul a:hover::after{
+    width: 100%;
+}
+.banner .banner-text{
+    margin: -110px;
+    margin-right: 10px;
+    text-align: center;
+    padding: 0 90px;
+}
+.btn{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 15px  20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+}
+.btn:hover{
+    background-color: rgba(0, 0, 0, 0.637);
+}
+.banner .banner-text h1{
+    font-size: 90px;
+    color: white;
+}
+.caixa {
+    width: 1580px; 
+    height: 600px;
+    margin-left: 30px;
+    background-color: #cfcfcfe1; 
+    float: left; 
+    margin-right: 20px; 
+    border-radius: 10px;
+    border-style: dashed;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    overflow: auto;
+    margin-top: 230px;
+}
+.caixa img{
+    float: left;
+    margin-right: 10px;
+}
+.caixa h2{
+    margin-top: 30px;
+    margin-left: 1000px;
+    font-size: 60px;
+}
+.caixa h3{
+    color: black;
+    margin-top: 10px;
+    font-size: 35px;
+    margin-left: 1000px;
+}
+.caixa p{
+    color: black;
+    margin-top: 10px;
+    font-size: 25px;
+    margin-left: 1000px;
+}
+.gatos{
+    border-radius: 50%;
+    padding: 20px;
+    width:350px;
+    margin-left: 150px;
+}
+.footer{
+    background-color: rgba(0, 0, 0, 0.74);
+    text-align: center;
+    margin-top: 900px;
+    padding: 10px;
+}
+.footer img{
+    width: 25px;
+    margin-right: 10px;
+}
+.footer p{
+    margin-top: 10px;
+    color: white;
+}
+.footer a{
+    color: white;
+    text-decoration: none;
+}
